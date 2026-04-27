@@ -1,0 +1,9 @@
+A high level overview of this project
+Stack: Fastapi for building the api, Redis for caching
+
+developer calls this api with arg: location
+api searches the cache for location's data
+if found then it returns data from Redis
+else it calls the visual weather api
+redis stores the filtered response
+api returns the fetched data
